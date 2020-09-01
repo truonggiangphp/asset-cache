@@ -1,6 +1,6 @@
 <?php
 
-namespace RossWintle\LaravelAssetCache\Tests;
+namespace Webike\AssetCache\Tests;
 
 class BladeDirectivesTest extends BladeTestCase
 {

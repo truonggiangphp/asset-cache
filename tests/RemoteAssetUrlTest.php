@@ -1,9 +1,9 @@
 <?php
 
-namespace RossWintle\LaravelAssetCache\Tests;
+namespace Webike\AssetCache\Tests;
 
 use PHPUnit\Framework\TestCase;
-use RossWintle\LaravelAssetCache\LaravelAssetCache;
+use Webike\AssetCache\LaravelAssetCache;
 
 class RemoteAssetUrlTest extends TestCase
 {

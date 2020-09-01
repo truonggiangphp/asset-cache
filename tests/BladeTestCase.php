@@ -1,6 +1,6 @@
 <?php
 
-namespace RossWintle\LaravelAssetCache\Tests;
+namespace Webike\AssetCache\Tests;
 
 use RossWintle\LaravelAssetCache\Tests\Concerns\CreatesApplication;
 use Orchestra\Testbench\TestCase as BaseTestCase;

@@ -1,6 +1,6 @@
 <?php
 
-namespace RossWintle\LaravelAssetCache\Tests\Concerns;
+namespace Webike\AssetCache\Tests\Concerns;
 
 use Illuminate\Support\Facades\View;
 
@@ -9,13 +9,13 @@ trait CreatesApplication
     protected function getPackageProviders($app)
     {
         return [
-            \RossWintle\LaravelAssetCache\LaravelAssetCacheServiceProvider::class
+            \Webike\AssetCache\AssetCacheServiceProvider::class
         ];
     }
     protected function getPackageAliases($app)
 	{
     	return [
-        	'LaravelAssetCache' => RossWintle\LaravelAssetCache\Facades\LaravelAssetCache::class,
+        	'LaravelAssetCache' => \Webike\AssetCache\Facades\AssetCache::class,
     	];
 	}
 }
