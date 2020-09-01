@@ -19,17 +19,22 @@ class AssetCache
     /** @var string */
     public $remoteAssetUrl;
 
+    /** @var string */
+    public $isExternal;
+
     /**
      * AssetCache constructor.
      * @param string $filename
      * @param string $version
      * @param string $remoteAssetUrl
+     * @param bool $isExternal
      */
-    public function __construct(string $filename, string $version, string $remoteAssetUrl)
+    public function __construct(string $filename, string $version, string $remoteAssetUrl, bool $isExternal)
     {
         $this->version = $version;
         $this->filename = $this->constructFilenameWithPathAndVersion($filename, $version);
         $this->remoteAssetUrl = $remoteAssetUrl;
+        $this->isExternal = $isExternal;
     }
 
     /**
@@ -59,12 +64,16 @@ class AssetCache
      */
     public function cachedUrl(): string
     {
-        if (!$this->isCached()) {
+        if (!$this->isCached() && $this->isExternal) {
             //   cache asset
             $this->refreshCachedFile();
+
+            return asset('storage/'.$this->filename);
         }
 
         return asset($this->filename);
+
+
     }
 
     /**

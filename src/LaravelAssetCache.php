@@ -13,17 +13,20 @@ class LaravelAssetCache
      * correct filename.
      * @param string $versionConstraint
      * @param string $filename
+     * @param bool $isExternal
      * @return string
      */
     public function cachedAssetUrl(
         string $versionConstraint,
-        string $filename
+        string $filename,
+        bool $isExternal = false
     ): string
     {
         return (new AssetCache(
             $filename,
             $versionConstraint,
-            $this->remoteAssetUrl($versionConstraint, $filename)
+            $this->remoteAssetUrl($versionConstraint, $filename),
+            $isExternal
         ))->cachedUrl();
     }
 
