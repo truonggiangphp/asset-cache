@@ -1,0 +1,41 @@
+{
+    "name": "webikevn/asset-cache",
+    "description": "Local caching for inclusion of non-hierarchical JavaScript and CSS assets in Laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ross Wintle",
+            "email": "ross@oikos.org.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "^5.7|^6.0|^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4":  {
+            "Webike\\AssetCache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4":  {
+            "Webike\\AssetCache\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "orchestra/testbench": "~4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webike\\AssetCache\\LaravelAssetCacheServiceProvider"
+            ],
+            "aliases": {
+                "AssetCache": "Webike\\AssetCache\\Facades\\LaravelAssetCache"
+            }
+        }
+    }
+}
