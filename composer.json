@@ -16,9 +16,10 @@
         "nesbot/carbon": "^2.17"
     },
     "autoload": {
-        "psr-4":  {
+        "psr-4": {
             "Webike\\AssetCache\\": "src/"
         }
+    },
     "autoload-dev": {
         "psr-4":  {
             "Webike\\AssetCache\\Tests\\": "tests/"
