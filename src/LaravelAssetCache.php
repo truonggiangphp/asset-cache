@@ -55,7 +55,7 @@ class LaravelAssetCache
         string $versionConstraint = '',
         string $filename = ''): string
     {
-        $urlPattern = "https://cdn.jsdelivr.net/npm/%s";
+        $urlPattern = "https://cdn.jsdelivr.net/npm/";
 
         if (!empty($versionConstraint)) {
             $urlPattern .= '@%s';
