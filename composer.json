@@ -31,10 +31,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Webike\\AssetCache\\LaravelAssetCacheServiceProvider"
+                "Webike\\AssetCache\\AssetCacheServiceProvider"
             ],
             "aliases": {
-                "AssetCache": "Webike\\AssetCache\\Facades\\LaravelAssetCache"
+                "AssetCache": "Webike\\AssetCache\\Facades\\AssetCache"
             }
         }
     }
