@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c74f7da8-0f68-42fd-a370-db1f61f32edb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssetCacheServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetCacheServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaravelAssetCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaravelAssetCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598935577138</updated>
-      <workItem from="1598935578267" duration="1189000" />
+      <workItem from="1598935578267" duration="1256000" />
     </task>
     <servers />
   </component>
