@@ -18,7 +18,7 @@ class AssetCacheServiceProvider extends ServiceProvider
     {
         // For testing see the example at https://github.com/appstract/laravel-blade-directives/blob/master/tests/DataAttributesTest.php
         Blade::directive('jscript', function ($expression) {
-            return '<?php echo "<script src=\\"" . \RossWintle\LaravelAssetCache\Facades\LaravelAssetCache::cachedAssetUrl(' . $expression . ') . "\\"></script>\\n" ?>';
+            return '<?php echo "<script src=\\"" . \Webike\AssetCache\Facades\AssetCache::cachedAssetUrl(' . $expression . ') . "\\"></script>\\n" ?>';
         });
     }
 }

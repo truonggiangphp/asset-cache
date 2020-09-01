@@ -17,7 +17,8 @@ class LaravelAssetCache
      */
     public function cachedAssetUrl(
         string $versionConstraint,
-        string $filename): string
+        string $filename
+    ): string
     {
         return (new AssetCache(
             $filename,
