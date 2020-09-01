@@ -5,6 +5,7 @@ namespace Webike\AssetCache;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Cache;
 use GuzzleHttp\Client;
+use Carbon\Carbon;
 
 class AssetCache
 {
@@ -69,11 +70,17 @@ class AssetCache
 		return 'LAC-' . $this->filename . '-cached';
 	}
 
+    /**
+     * @return bool
+     */
 	public function isCached(): bool
 	{
 		return Cache::has($this->cacheKey());
 	}
 
+    /**
+     * @return void
+     */
 	public function refreshCachedFile(): void
 	{
 		try {
@@ -91,6 +98,6 @@ class AssetCache
 		Storage::disk('public')->put($this->filename, $contents);
 
 		// Update cache name and timestamp
-		Cache::put($this->cacheKey(), time(), now()->addHours(1));
+		Cache::put($this->cacheKey(), time(), Carbon::now()->addHours(1)->timestamp);
 	}
 }
