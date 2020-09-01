@@ -17,7 +17,7 @@
     },
     "autoload": {
         "files": [
-            "helpers/helpers.php"
+            "src/helpers/helpers.php"
         ],
         "psr-4": {
             "Webike\\AssetCache\\": "src/"
